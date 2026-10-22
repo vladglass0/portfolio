@@ -279,21 +279,6 @@ export const projects: Project[] = [
     slug: 'MaterialMC',
   },
   {
-    title: 'MaterialMC Website',
-    description: 'A modern Material 3 landing page concept for MaterialMC.',
-    logo: '/logos/js_icon.svg',
-    link: 'https://github.com/vladglass0/MaterialMC-site',
-    slug: 'MaterialMC-site',
-  },
-  {
-    title: 'Mekanism MoreSolarPanels',
-    description:
-      'A Mekanism addon with up to 9 new configurable solar panels, including a creative one.',
-    logo: 'https://avatars.githubusercontent.com/u/129985729',
-    link: 'https://github.com/vladglass0/Mekanism-Panels',
-    slug: 'Mekanism-Panels',
-  },
-  {
     title: 'fakebuild',
     description:
       'Type `build browser`, watch a Gentoo-style emerge animation, then the real program launches. Written in Go.',
