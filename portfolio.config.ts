@@ -34,7 +34,7 @@ export const profile = {
   currentPosition: 'Hobby developer',
   location: 'Russia',
   siteUrl: 'https://rtxbb.lts-net.ru',
-  ogImage: 'https://imgur.com/4zi5KkQ.png',
+  ogImage: 'https://i.imgur.com/KUYkMRi.png',
   repository: 'https://github.com/vladglass0/portfolio',
   metaDescription:
     "RtxBB is hobby developer.",
