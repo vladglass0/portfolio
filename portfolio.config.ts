@@ -29,36 +29,32 @@ import { Project } from '@/types';
 // the template your own; pages and components read from it.
 
 export const profile = {
-  name: 'Nitin Ranganath',
-  role: 'Full Stack Developer',
-  currentPosition: 'Software Engineer at Tessact',
-  location: 'Mumbai, India',
-  siteUrl: 'https://vscode-portfolio.vercel.app',
+  name: 'RtxBB',
+  role: 'Hobby developer',
+  currentPosition: 'Hobby developer',
+  location: 'Russia',
+  siteUrl: 'https://rtxbb.lts-net.ru',
   ogImage: 'https://imgur.com/4zi5KkQ.png',
-  repository: 'https://github.com/itsnitinr/vscode-portfolio',
+  repository: 'https://github.com/vladglass0/portfolio',
   metaDescription:
-    "Nitin Ranganath is an avid full stack web developer building websites and applications you'd love to use",
+    "RtxBB is hobby developer.",
   ogDescription:
-    "A full-stack developer building websites that you'd like to use.",
+    "A hobby developer.",
   keywords: [
-    'nitin ranganath',
-    'nitin',
-    'ranganath',
-    'web developer portfolio',
-    'nitin web developer',
-    'nitin developer',
-    'mern stack',
-    'nitin ranganath portfolio',
-    'vscode-portfolio',
+    'rtxbb',
+    'rtxbb portfolio',
+    'vladglass0',
+    'minecraft mods',
+    'hobby developer',
   ],
   intro:
-    'I craft clean, performant web applications with modern technologies. Specialized in TypeScript, React, Node.js, and building products that users love.',
+    'I build things for fun: Minecraft mods, Linux utilities in Python and Go, and small web projects.',
   bio: [
-    "I'm a software engineer passionate about crafting beautiful, performant web experiences. I primarily work with the JavaScript/TypeScript ecosystem and React, building products that people love to use.",
-    'While I specialize in frontend development, I enjoy working across the stack with Node.js, MongoDB, and Express to bring full-stack applications to life.',
+    "I'm a hobby developer who likes tinkering with whatever is interesting at the moment, from Forge and NeoForge mods to hardware control tools on Linux.",
+    'Most of my code lives on GitHub: Java mods, Python desktop apps, Go CLI toys, Lua scripts for ComputerCraft and a bit of web.',
   ],
   beyondCode:
-    'Aside from programming and writing, I enjoy reading dystopian novels, listening to calm piano music, or just enjoying some downtime.',
+    'Aside from programming, I enjoy playing and hosting Minecraft servers.',
 };
 
 export interface Social {
@@ -70,43 +66,13 @@ export interface Social {
 export const socials: Social[] = [
   {
     id: 'website',
-    handle: 'nitinranganath.com',
-    href: 'https://nitinranganath.com',
-  },
-  {
-    id: 'email',
-    handle: 'nitinranganath@gmail.com',
-    href: 'mailto:nitinranganath@gmail.com',
+    handle: 'rtxbb.lts-net.ru',
+    href: 'https://rtxbb.lts-net.ru',
   },
   {
     id: 'github',
-    handle: 'itsnitinr',
-    href: 'https://github.com/itsnitinr',
-  },
-  {
-    id: 'linkedin',
-    handle: 'nitinranganath',
-    href: 'https://www.linkedin.com/in/nitinranganath/',
-  },
-  {
-    id: 'twitter',
-    handle: 'iamnitinr',
-    href: 'https://www.twitter.com/iamnitinr',
-  },
-  {
-    id: 'telegram',
-    handle: 'iamnitinr',
-    href: 'https://t.me/iamnitinr',
-  },
-  {
-    id: 'peerlist',
-    handle: 'nitinranganath',
-    href: 'https://peerlist.io/nitinranganath',
-  },
-  {
-    id: 'devto',
-    handle: 'itsnitinr',
-    href: 'https://dev.to/itsnitinr',
+    handle: 'vladglass0',
+    href: 'https://github.com/vladglass0',
   },
 ];
 
@@ -122,21 +88,13 @@ export interface Experience {
 
 export const experience: Experience[] = [
   {
-    role: 'Software Engineer 2',
-    company: 'Tessact',
+    role: 'Hobby developer',
     period: 'Present',
     highlights: [
-      'Leading frontend development with a lean team of 4 engineers',
-      'Building a next-gen video creation suite for professionals',
-      'Implemented collaborative video reviewing and editing features',
-      'Maintaining in-house component library, icon library and website',
+      'Minecraft mods for Forge and NeoForge, including LTS Auth on Modrinth',
+      'Linux desktop tools in Python and PySide6',
+      'Contributions to MaterialMC, a fork of Prism Launcher',
     ],
-  },
-  {
-    role: 'Technical Writer',
-    period: 'Freelance',
-    description:
-      'Contributing to publications like 100ms Blog, LogRocket Blog, and DEV.to.',
   },
 ];
 
@@ -199,8 +157,6 @@ export const extensions: Extension[] = [
     icon: SiReact,
     color: '#61dafb',
     description: 'Building interactive UIs, from video editors to portfolios.',
-    details:
-      'React is where I spend most of my time. At Tessact I build collaborative video reviewing and editing features with it, and maintain our in-house component library.',
     experience: '4 years',
   },
   {
@@ -296,47 +252,61 @@ export const skills = extensions.reduce<Record<string, string[]>>(
   {}
 );
 
-export const writing = [
-  { name: '100ms Blog', href: 'https://www.100ms.live/blog/author/nitin' },
-  {
-    name: 'LogRocket Blog',
-    href: 'https://blog.logrocket.com/author/nitinranganath/',
-  },
-  { name: 'DEV.to', href: 'https://dev.to/itsnitinr' },
-];
+export const writing: { name: string; href: string }[] = [];
 
 export const projects: Project[] = [
   {
-    title: 'Driwwwle',
+    title: 'FX240 LCD',
     description:
-      'Discover creative websites and developers. A portal for you to share your projects.',
-    logo: '/logos/driwwwle.svg',
-    link: 'https://github.com/itsnitinr/driwwwle',
-    slug: 'driwwwle',
+      'Python + PySide6 app for the ID-COOLING FX240 pump display on Linux: live temperatures, custom images and GIFs, theme editor.',
+    logo: 'https://avatars.githubusercontent.com/u/129985729',
+    link: 'https://github.com/vladglass0/id-cooling_lcd',
+    slug: 'id-cooling_lcd',
   },
   {
-    title: 'VSCode Portfolio',
-    description:
-      'A Visual Studio Code themed developer portfolio built with Next.js and CSS Modules.',
-    logo: '/logos/vsc.svg',
-    link: 'https://github.com/itsnitinr/vscode-portfolio',
-    slug: 'vscode-portfolio',
+    title: 'LTS Auth',
+    description: 'A server-side authentication mod for Minecraft Forge 1.20.1.',
+    logo: 'https://avatars.githubusercontent.com/u/129985729',
+    link: 'https://github.com/vladglass0/lts-auth',
+    slug: 'lts-auth',
   },
   {
-    title: 'Subtrackt',
+    title: 'MaterialMC',
     description:
-      'A simple and elegant way to track your subscriptions and save money.',
-    logo: '/logos/subtrackt.svg',
-    link: 'https://github.com/itsnitinr/subtrackt',
-    slug: 'subtrackt',
+      'A custom Minecraft launcher for managing multiple installations. Fork of Prism Launcher.',
+    logo: 'https://avatars.githubusercontent.com/u/129985729',
+    link: 'https://github.com/vladglass0/MaterialMC',
+    slug: 'MaterialMC',
   },
   {
-    title: 'Coolify Deployments',
+    title: 'MaterialMC Website',
+    description: 'A modern Material 3 landing page concept for MaterialMC.',
+    logo: '/logos/js_icon.svg',
+    link: 'https://github.com/vladglass0/MaterialMC-site',
+    slug: 'MaterialMC-site',
+  },
+  {
+    title: 'Mekanism MoreSolarPanels',
     description:
-      'VSCode extension to track and deploy your Coolify applications.',
-    logo: '/logos/coolify.svg',
-    link: 'https://github.com/itsnitinr/coolify-vscode-extension',
-    slug: 'coolify-vscode-extension',
+      'A Mekanism addon with up to 9 new configurable solar panels, including a creative one.',
+    logo: 'https://avatars.githubusercontent.com/u/129985729',
+    link: 'https://github.com/vladglass0/Mekanism-Panels',
+    slug: 'Mekanism-Panels',
+  },
+  {
+    title: 'fakebuild',
+    description:
+      'Type `build browser`, watch a Gentoo-style emerge animation, then the real program launches. Written in Go.',
+    logo: 'https://avatars.githubusercontent.com/u/129985729',
+    link: 'https://github.com/vladglass0/fakebuild',
+    slug: 'fakebuild',
+  },
+  {
+    title: 'LTS Checker',
+    description: 'A Python utility, also packaged as a Windows exe with PyInstaller.',
+    logo: 'https://avatars.githubusercontent.com/u/129985729',
+    link: 'https://github.com/vladglass0/ltscheck',
+    slug: 'ltscheck',
   },
 ];
 
